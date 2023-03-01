@@ -1,4 +1,4 @@
-def kg_lb_convertor():
+While True:
     try:
         amount = float(input("Input a number: "))
         unit = input("Type lb for pound, kg for kilogram: ").lower()
@@ -12,6 +12,3 @@ def kg_lb_convertor():
             print('Type "lb" or "kg" only pls')
     except ValueError:
         print("Invalid input, please type a numerical number.")
-    print(kg_lb_convertor())
-
-print(kg_lb_convertor())
