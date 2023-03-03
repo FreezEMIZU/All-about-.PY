@@ -1,3 +1,6 @@
+#This is an infinity password change script. Register a name to infinitely change your password
+#still working on ordered dict for password used for login
+
 def leng_tion(a):
     while True:
         e = input(a)
