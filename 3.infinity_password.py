@@ -1,19 +1,22 @@
-#This is an infinity password change script. Register a name to infinitely change your password
-#still working on ordered dict for password used for login
+# This is an infinity password change script. Register a name to infinitely change your password
+# still working on ordered dict for password used for login
+
 
 def leng_tion(a):
     while True:
         e = input(a)
         if len(e) < 3:
             print("too short")
-        elif e == ("logout"):
+        elif e == "logout":
             return e
         elif len(e) > 5:
             print("too long")
         else:
             return e
 
+
 acc = {}
+
 
 def logreg(name):
     if name in acc:
@@ -23,17 +26,19 @@ def logreg(name):
         print("registered")
         return False
 
+
 def wordloop(name):
     while True:
         word = leng_tion("New Password: ")
         if word in acc[name]:
             print("Password used")
-        elif word == ("logout"):
+        elif word == "logout":
             break
         else:
             print("Latest password set")
             acc[name].add(word)
             print(acc[name])
+
 
 def login(name):
     tri = 0
@@ -48,9 +53,10 @@ def login(name):
     else:
         print("Please reset")  # aka. force login
 
+
 while True:
     name = leng_tion("Name:")
-    if logreg(name) == False:
+    if logreg(name) is False:
         word = leng_tion("First Password: ")
         acc[name] = {word}
     else:
