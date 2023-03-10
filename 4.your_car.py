@@ -6,22 +6,22 @@ print('\nYou bought a car. \nType "help" to help yourself with the car.\n')
 b = True
 drive = False
 
-while b == True:
+while b is True:
     c = True
-    while c == True:
-        a = input("Input: " ).lower()
+    while c is True:
+        a = input("Input: ").lower()
         if a == "run":
-            if drive != True:
+            if drive is False:
                 print("Car is running.")
                 drive = True
             else:
-                print("It is running alrdy.")
+                print("It is running already.")
         elif a == "break":
-            if drive == True:
+            if drive is True:
                 print("Car has stopped.")
                 drive = False
             else:
-                print("Car is stopped alrdy.")
+                print("Car is stopped already.")
         elif a == "throw":
             print("You have thrown away your car.")
             c = False
