@@ -1,5 +1,5 @@
 # Your car story
-# pending to fix, and "bye" L55
+# pending to fix, and "bye" L64
 
 print('\nYou bought a car. \nType "help" to help yourself with the car.\n')
 
